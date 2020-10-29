@@ -10,7 +10,7 @@ except:
 while True:
     if gotDirName:
         inputName=input('Please enter a \'.txt\' file name that is on the same directory with this python file.\n')
-        fileName = dirName+"/"+inputName+'.txt'
+        fileName = os.path.join(dirName, inputName + ".txt")
     else:
         inputName=input('Please enter a complete \'.txt\' file path.\n')
         fileName=inputName
